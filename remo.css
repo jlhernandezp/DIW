@@ -1,0 +1,61 @@
+.encaja{
+		margin:auto;
+}
+
+/* clases para establecer el color del gradiente de los botones del slide*/ 
+ .gradienteIzquierdo{
+	background-image: -webkit-linear-gradient(left,rgba(121,203,194,.5) 0,rgba(47,130,146,.0001) 100%);
+	background-image: -o-linear-gradient(left,rgba(121,203,194,.5) 0,rgba(47,130,146,.0001) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(121,203,194,.5)),to(rgba(47,130,146,.0001)));
+	background-image: linear-gradient(to right,rgba(121,203,194,.5) 0,rgba(47,130,146,.0001) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#357e8f00', endColorstr='#75d1c500', GradientType=1);
+	background-repeat: repeat-x;
+}
+
+.gradienteDerecho {
+	right: 0;
+	left: auto;
+	background-image: -webkit-linear-gradient(left,rgba(47,130,146,.0001) 0,rgba(121,203,194,.5) 100%);
+	background-image: -o-linear-gradient(left,rgba(47,130,146,.0001) 0,rgba(121,203,194,.5) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(47,130,146,.0001)),to(rgba(121,203,194,.5)));
+	background-image: linear-gradient(to right,rgba(47,130,146,.0001) 0,rgba(121,203,194,.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75d1c500', endColorstr='#357e8f00', GradientType=1);
+	background-repeat: repeat-x;
+}
+
+/*Cambia el color de fondo de la página por uno de la paleta.*/
+body{
+		background-color:rgb(241,238,217);
+}
+
+/* cambia el color de la barra de navegación */
+.navbar-inverse{
+	background-color:#142940;
+	border-color:#357e8f;
+	
+}
+
+/* cambia el margen inferior */
+.navbar {
+
+	margin-bottom: 0px;
+	
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	background-color:#142940;
+	border-color: #142940;
+}
+
+.espacio-superior{
+	margin:0.5em auto 0.5em 30%;
+}
+
+.navbar-wrapper  {
+	background-color:#142940
+}
+
+.color-texto5{
+	color:#357e8f;
+}
+
