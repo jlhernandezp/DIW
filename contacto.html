@@ -9,7 +9,7 @@
     <meta name="author" content="José Luis Hernández Pascual">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Entreno de remo</title>
+    <title>Remo. Formulario de contacto</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,18 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Signika">
     <!-- Custom styles for this template -->
     <link href="remo.css" rel="stylesheet">
-  </head>
+      <!-- Bootstrap core CSS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
+<script src="./bootstrap-3.3.6-dist/js/jqBootstrapValidation.js"></script>
+
+<script>
+  $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
+  </script>
+
+
+ </head>
   <body>
     <div class="navbar-wrapper">
       <div class="container">
@@ -51,10 +62,10 @@
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#about">Presentación</a></li>
-                <li class="active"><a href="#">Entrenamiento</a></li>
+                <li><a href="#">Entrenamiento</a></li>
 				<li><a href="tecnica.html">Técnica</a></li>
 				<li><a href="embarcaciones.html">Embarcaciones</a></li>
-				<li><a href="#contact">Contacto</a></li>
+				<li class="active"><a href="#contact">Contacto</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actividades <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -84,54 +95,87 @@
     </div>
 	
 	<!-- Cabecera de la página -->
-	<div class="container">
-      <div class="page-header">
-        <h1>Entrenamientos habituales.</h1>
-        <p class="lead">Estos son los ejercicios que realizan los remeros del club en diferentes sesiones y con distintos objetivos.</p>
+	
+	<!-- Comienzo del formulario -->
+	
+<div class="container margen">
+	  <div class="page-header">
+        <h1>Formulario de contacto.</h1>
+        <p class="lead">Introduzca sus datos y su consulta.</p>
       </div>
+	  <hr class="divisor"/>
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label">Correo electrónico</label>
+        <div class="controls">
+          <input class="form-control" type="email" name="correo" />
+          <p class="help-block"></p>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Escriba de nuevo el correo</label>
+        <div class="controls">
+          <input 
+			class="form-control"
+            type="email" 
+            data-validation-match-match="correo" 
+			data-validation-match-message="El correo no coincide"
+            name="reCorreo" 
+          />
+          <p class="help-block"></p>
+        </div>
+      </div>
+	  <div class="control-group">
+			<label for="Nombre">Nombre</label>
+			<input type="text" class="form-control" id="nombre" 
+				   placeholder="Nombre">
+		  </div>
+		  <div class="control-group">
+			<label for="apellidos">Apellidos</label>
+			<input type="text" class="form-control" id="apellidos" 
+				   placeholder="Apellidos">
+		  </div>
+		  <div class="control-group">
+			<label for="telefono">Teléfono de contacto</label>
+			<input type="text" class="form-control" id="telefono" 
+				   placeholder="Teléfono">
+		  </div>
+		  <div class="control-group">
+			<label for="mensaje">Mensaje</label>
+			<textarea class="form-control" rows="3" id="mensaje">Escriba su consulta</textarea>
+		  </div>
+		  
+		  <div class="control-group">
+			<label for="archivo">Adjuntar un archivo</label>
+			<input type="file" id="archivo" name="archivo">
+			<p class="help-block">Máx. 8 MB</p>
+		  </div>
+		  
+		   <div class="control-group">
+                <label class="control-label" for="terms-and-conditions">Aviso legal</label>
+                    <div class="controls">
+                        <label class="checkbox margen">
+                            <input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required data-validation-required-message="Debe aceptar los terminos y condiciones">
+                               He leído los <a href="#">terminos y condiciones</a> de la página y las acepto.
+                        </label>
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+		  
+		  <button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+   
+	</form>
 
-      <h3></h3>
-       <hr class="divisor">
-      <div class="row featurette">
-        
-        <div class="col-xs-12 col-sm-12 col-md-8">
-			<h2 class="featurette-heading">Ergómetro. <span class="text-muted">Exigencia física.</span></h2>
-			<p class="lead">
-				En la posición inicial, la espalda debe estar erguida, mirando al frente, evitando que la espalda se curve, con una ligera anteroflexión de las caderas, 
-				los brazos estarán extendidos delante del cuerpo, y las caderas y rodillas están flexionadas con los tobillos verticales. Desde esa posición pasamos
-				a la Fase de Tracción, en donde extenderemos las caderas y rodillas forzadamente, usando los músculos de caderas, cuadriceps y glúteos, durante el movimiento,
-				el torso se echa ligeramente hacia atrás, y finalmente una vez extendidas las caderas y rodillas los brazos tracciónan hacia el abdomen por debajo de la caja 
-				torácica.
-			</p>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<img class="featurette-image img-responsive center-block" src="imagen/ergometro-cuadrada.jpg" alt="Remo en ergómetro" />
-		</div>
-		<a class="btn btn-lg btn-primary margen" href="http://www.buenaforma.org/2013/04/03/el-remoergometro-el-gran-desconocido-del-gimnasio/" role="button">Más información</a></p>
-	  </div>
-	  
-	   <hr class="divisor">
-	  
-	  <div class="row featurette">
-        
-        <div class="col-xs-12 col-sm-12 col-md-8">
-			<h2 class="featurette-heading">Ergómetro. <span class="text-muted">Exigencia física.</span></h2>
-			<p class="lead">
-			Los programas de actividad física deben proporcionar relajación, resistencia, fortaleza muscular y flexibilidad. En la interacción del cuerpo con el espacio 
-			y el tiempo a través del movimiento, se construyen numerosos aprendizajes del ser humano. Esta construcción se realiza a través de una sucesión de experiencias
-			educativas que se promueven mediante la exploración, la práctica y la interiorización, estructurando así el llamado esquema corporal</p>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<img class="featurette-image img-responsive center-block" src="imagen/ejercicios-abs-1-transparente.png" alt="Tabla de ejercicios" />
-		</div>
-		<a class="btn btn-lg btn-primary margen" href="http://www.deportesalud.com/deporte-salud-el-deporte-y-sus-beneficios-en-la-salud-fisica-y-mental-y-psicologica-.html" role="button">Más información</a></p>
-	  </div>
-	  
-	    <hr class="divisor">
-    </div> <!-- /container -->
 
-
+ </div>   
+	 <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script>window.jQuery || document.write('<script src="./bootstrap-3.3.6-dist/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./bootstrap-3.3.6-dist/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

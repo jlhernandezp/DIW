@@ -23,8 +23,14 @@
 	background-repeat: repeat-x;
 }
 
+/* uso de la fuente de google*/
+h1,h2,h3,p{
+	font-family:'Signika',arial,sans, helvetica;
+}
 /*Cambia el color de fondo de la página por uno de la paleta.*/
+
 body{
+		font-family:'Signika', arial, sans;
 		background-color:rgb(241,238,217);
 }
 
@@ -58,4 +64,26 @@ body{
 .color-texto5{
 	color:#357e8f;
 }
-
+.divisor{
+		color:#802c2a;
+		border-style: inset;
+		border-width: 1px;
+}
+.margen{
+	
+	margin:1em;
+}
+#sociales{
+  margin-top:4px;
+  
+  height: 38px;
+  line-height: 32px;
+  background-image: url("imagen/iconos-redes-sociales2.png");
+  background-repeat: no-repeat;
+  float:right;
+  
+}
+#sociales img{
+	width:47px;
+	height:47px;
+}

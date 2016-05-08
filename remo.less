@@ -4,6 +4,8 @@
 @color4:#142940;
 @color5:#802c2a;
 @color6:#d6757e;
+@googleFont:'Signika';
+
 
 .encaja{
 	margin:auto;
@@ -23,4 +25,17 @@ navbar-inverse{
 }
 .color-texto5{
 	text-color:@color5;
+}
+.divisor {
+ 
+	color:@color5;
+	border-style: inset;
+    border-width: 1px;
+	
+}
+.margen (@margen:1em){
+	margin:@margen;
+}
+h1,h2,h3,p{
+	font-family:@googleFont,arial,sans, helvetica;
 }
